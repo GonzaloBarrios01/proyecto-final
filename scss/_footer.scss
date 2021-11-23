@@ -1,0 +1,23 @@
+.contactanos{
+    text-align: center;
+    color: white;
+}
+
+
+footer{
+    background-color: black;
+    margin-top: 10%;
+
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.instagram:hover, .facebook:hover, .twitter:hover, .whatsapp:hover, .mail:hover{
+    zoom: 150%;
+} 
+

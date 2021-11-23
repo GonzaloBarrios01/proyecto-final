@@ -1,0 +1,53 @@
+
+.subtitulo, .destacados, .paragraph{
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    margin: 1%;
+    width: 80%;
+    margin: auto;
+}
+
+.destacados{
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+
+.paragraph{
+    font-size: 1rem;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.carrusel{
+    margin-left: 25%;
+    text-align: center;
+    justify-content: center;
+}
+
+.carrusel-1, .carrusel-2, .carrusel-3{
+
+    padding: 20%;
+
+} 
+
+.descripcion{
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.ver-todo{
+    margin-top: 2%;
+    padding: 1%;
+    padding-right: 3%;
+    padding-left: 3%;
+    position: absolute;
+    left:45%;
+    font-weight: 500 ;
+}
+
+.ver-todo:hover{
+    font-weight: 1000 ;
+}

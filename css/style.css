@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+.subtitulo, .destacados, .paragraph {
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  margin: 1%;
+  width: 80%;
+  margin: auto;
+}
+
+.destacados {
+  margin-top: 6%;
+  margin-bottom: 4%;
+}
+
+.paragraph {
+  font-size: 1rem;
+  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.carrusel {
+  margin-left: 25%;
+  text-align: center;
+  justify-content: center;
+}
+
+.carrusel-1, .carrusel-2, .carrusel-3 {
+  padding: 20%;
+}
+
+.descripcion {
+  list-style: none;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.ver-todo {
+  margin-top: 2%;
+  padding: 1%;
+  padding-right: 3%;
+  padding-left: 3%;
+  position: absolute;
+  left: 45%;
+  font-weight: 500;
+}
+
+.ver-todo:hover {
+  font-weight: 1000;
+}
+
+.header-container {
+  display: grid;
+  row-gap: 1;
+}
+
+.contactanos {
+  text-align: center;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  margin-top: 10%;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.instagram:hover, .facebook:hover, .twitter:hover, .whatsapp:hover, .mail:hover {
+  zoom: 150%;
+}
+
+.titulo {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.publicaciones {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 2%;
+}
+
+.card:hover {
+  border: 2px solid black;
+  background-color: #e7e6e6;
+}
+
+.paginas-button {
+  margin-top: 2%;
+  margin-left: 42%;
+}
+
+.edit-button {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.edit-button:hover {
+  background-color: lightgray;
+  color: black;
+  border: 1px solid black;
+}
+
+.carrousel-container {
+  margin: 3%;
+}
+
+h6 {
+  font-size: 3em;
+}
+
+.agregados-list, .descripcion-list {
+  list-style: none;
+  font-size: 1em;
+}
+
+.price {
+  font-size: 2em;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  width: 80%;
+  margin: auto;
+}
+
+.enlace, .enlace:hover {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-color {
+  background-color: black;
+}
+
+/* Desktop */
+@media screen and (min-width: 961px) {
+  body {
+    background-color: #bdc6df;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  body {
+    background-color: #bdc6df;
+  }
+}
+/* formato de enlaces*/
+
+/*# sourceMappingURL=style.css.map */
