@@ -36,24 +36,24 @@
 <body>
 
     <header>
-
-        <div class="header">
-
-            <div class="logo">
-                <a href="./index.html"> <img src="./Src/Imagenes/Logo.png" alt="Logo" width="360" height="auto"> </a>
-            </div>
-
-            <div class="buscador">
-                <!-- Buscador -->
-                <input type="Buscar en Burnout Automotores">
-            </div>
-
-            <div>
-                <img src="./Src/Imagenes/MetodosDePago.png" alt="MetodosDePago" width="360" height="auto">
-            </div>
-            
+        <div class="header-container d-flex justify-content">
+            <nav class="navbar navbar-light bg-transparent">
+                <div class="container-fluid">
+                    <div class="logo col-4">
+                        <a href="./index.html"> <img src="./Src/Imagenes/Logo.png" alt="Logo" width="100%" height="auto"> </a>
+                    </div>
+                    <form class="d-flex col-3">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">
+                            <img src="./Src/Imagenes/magnifying-glass.svg" alt="search" width="100%">
+                        </button>
+                    </form>
+                    <div class="payment col-4">
+                        <img src="./Src/Imagenes/MetodosDePago.png" alt="MetodosDePago" width="100%" height="auto">
+                    </div>
+                </div>
+            </nav>
         </div>
-
     </header>
 
 
