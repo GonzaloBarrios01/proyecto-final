@@ -75,71 +75,80 @@
     </section>
 
     <section>
-        <nav >
-            
-            <div class="carrusel">
+        <nav>
+            <h2 class="destacados"> PRODUCTOS DESTACADOS </h2>
 
-                <h2 class="destacados"> PRODUCTOS DESTACADOS </h2>
-                
-                <div class="carrusel-1">
+            <div id="carouselExampleIndicators" class="carousel slide d-block w-50 carrusel " data-bs-ride="carousel">
 
-                    <a href="./Paginas/Porsche718.html" class="enlace">
-
-                        <img src="./Src/Imagenes/Porsche.Cayman718.jpg" alt="Porsche718Cayman" width="250" height="auto">
-
-                        <ul class="descripcion">
-                            <li><strong> PORSCHE 718 CAYMAN S </strong></li>
-                            <li> Color: Amarillo </li>
-                            <li> Tipo de combustible: Nafta </li>
-                            <li> Puertas: 2 </li>
-                            <li> Kilómetros: 27.562 Km </li>
-                            <li><strong> $ 160.000 USD </strong></li>
-                        </ul>
-
-                    </a>
-
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
 
-                <div class="carrusel-2">
+                <div class="carousel-inner">
+                    <div class="carousel-item active carrusel-1">
+                        <a href="./Paginas/Porsche718.html" class="enlace">
+                            <img src="./Src/Imagenes/Porsche.Cayman718.jpg" class="d-block w-100" alt="Porsche718Cayman">
 
-                    <a href="./Paginas/Porsche911.html" class="enlace">
+                            <div>
+                                <ul class="descripcion">
+                                    <li><strong> PORSCHE 718 CAYMAN S </strong></li>
+                                    <li> Color: Amarillo </li>
+                                    <li> Tipo de combustible: Nafta </li>
+                                    <li> Puertas: 2 </li>
+                                    <li> Kilómetros: 27.562 Km </li>
+                                    <li><strong> $ 160.000 USD </strong></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
 
-                        <img src="./Src/Imagenes/Porsche.911.1971.jpg" alt="Porsche911" width="250" height="auto">                      
+                    <div class="carousel-item carrusel-2">
+                        <a href=" ./Paginas/Porsche911.html" class="enlace">
+                            <img src="./Src/Imagenes/Porsche.911.1971.jpg" class="d-block w-100" alt="Porsche911">
 
-                        <ul class="descripcion">
-                            <li><strong> PORSCHE 911 CARRERA S </strong></li>
-                            <li> Color: Naranja </li>
-                            <li> Tipo de combustible: Nafta </li>
-                            <li> Puertas: 2 </li>
-                            <li> Kilómetros: 32.567 Km </li>
-                            <li><strong> $ 137.000 USD </strong></li>
-                        </ul>
+                            <div>
+                                <ul class="descripcion">
+                                    <li><strong> PORSCHE 911 CARRERA S </strong></li>
+                                    <li> Color: Naranja </li>
+                                    <li> Tipo de combustible: Nafta </li>
+                                    <li> Puertas: 2 </li>
+                                    <li> Kilómetros: 32.567 Km </li>
+                                    <li><strong> $ 137.000 USD </strong></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
 
-                    </a>
+                    <div class="carousel-item carrusel-3">
+                        <a href="./Paginas/FordF150.html" class="enlace">
+                            <img src="./Src/Imagenes/Ford.F150.Raptor.jpg" class="d-block w-100" alt="Ford.F150">
 
+                            <div>
+                                <ul class="descripcion">
+                                    <li><strong> FORD F-150 RAPTOR </strong></li>
+                                    <li> Color: Azul </li>
+                                    <li> Tipo de combustible: Nafta </li>
+                                    <li> Puertas: 4 </li>
+                                    <li> Kilómetros: 12.562 Km </li>
+                                    <li><strong> $ 95.000 USD </strong></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="carrusel-3">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
 
-                    <a href="./Paginas/FordF150.html" class="enlace">
-
-                        <img src="./Src/Imagenes/Ford.F150.Raptor.jpg" alt="Ford.F150" width="250" height="auto">
-
-                        <ul class="descripcion">
-                            <li><strong> FORD F-150 RAPTOR </strong></li>
-                            <li> Color: Azul </li>
-                            <li> Tipo de combustible: Nafta </li>
-                            <li> Puertas: 4 </li>
-                            <li> Kilómetros: 12.562 Km </li>
-                            <li><strong> $ 95.000 USD </strong></li>
-                        </ul>
-
-                    </a>
-
-                </div>
-
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-
         </nav>
     </section>
 
