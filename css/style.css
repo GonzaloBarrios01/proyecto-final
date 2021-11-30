@@ -10,7 +10,6 @@
 
 .destacados {
   margin-top: 6%;
-  margin-bottom: 4%;
 }
 
 .paragraph {
@@ -20,7 +19,7 @@
   margin-bottom: 1%;
 }
 
-.carrusel {
+.carrusel{
   margin-left: 25%;
   text-align: center;
   justify-content: center;
@@ -37,7 +36,7 @@
 }
 
 .ver-todo {
-  margin-top: 2%;
+  margin-top: -8%;
   padding: 1%;
   padding-right: 3%;
   padding-left: 3%;
@@ -56,13 +55,10 @@
 }
 
 .contactanos {
+  margin-top: 20px;
+  margin-bottom: 50px;
   text-align: center;
   color: white;
-}
-
-footer {
-  background-color: black;
-  margin-top: 10%;
 }
 
 .social {
@@ -70,6 +66,7 @@ footer {
   justify-content: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .instagram:hover, .facebook:hover, .twitter:hover, .whatsapp:hover, .mail:hover {
