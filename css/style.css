@@ -58,7 +58,7 @@
   margin-top: 20px;
   margin-bottom: 50px;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .social {
@@ -161,6 +161,11 @@ html {
     background-color: #bdc6df;
   }
 }
-/* formato de enlaces*/
+/* Mobile */
+@media screen and (max-width: 481px){
+  body{
+    background-color: #bdc6df;
+  }
 
+}
 /*# sourceMappingURL=style.css.map */

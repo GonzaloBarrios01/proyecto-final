@@ -1,5 +1,5 @@
 @import "variables";
-@import "body";
+@import "index";
 @import "header";
 @import "footer";
 
@@ -36,13 +36,18 @@ html{
 }
 
 /* Tablet */
-@media screen and (min-width: 481px) and (max-width: 960px){
+@media screen and (min-width: 482px) and (max-width: 960px){
     body{
         background-color: $bg-color-home
     }
 
 }
 
-/* formato de enlaces*/
+/* Mobile */
+@media screen and (max-width: 481px){
+    body{
+        background-color: $bg-color-home
+    }
 
+}
 

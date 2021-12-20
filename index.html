@@ -20,9 +20,6 @@
     de vehiculos usados.
     Contamos con mas de 20 años de experiencia y la mejor atencion.">
 
-    <!-- ANIMATE.CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
     <!-- CSS BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -38,26 +35,23 @@
     <header>
         <div class="header-container d-flex justify-content">
             <nav class="navbar navbar-light bg-transparent">
-                <div class="container-fluid">
-                    <div class="logo col-4">
+                <div class="container-fluid d-flex justify-content-center">
+                    <div class="logo col-6 col-lg-4">
                         <a href="./index.html"> <img src="./Src/Imagenes/Logo.png" alt="Logo" width="100%" height="auto"> </a>
                     </div>
-                    <form class="d-flex col-3">
+                    <form class="d-flex col-6 col-lg-4">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">
                             <img src="./Src/Imagenes/magnifying-glass.svg" alt="search" width="100%">
                         </button>
                     </form>
-                    <div class="payment col-4">
-                        <img src="./Src/Imagenes/MetodosDePago.png" alt="MetodosDePago" width="100%" height="auto">
-                    </div>
                 </div>
             </nav>
         </div>
     </header>
 
 
-    <section class="animate__animated animate__heartBeat animate__delay-3s">
+    <section>
         <p class="subtitulo"> ¿Quienes somos? </p>
 
         <p class="paragraph">
@@ -74,19 +68,96 @@
         </p>
     </section>
 
+    <!-- Carrusel -->
+    <section class="carrusel-container">
+        <h2 class="destacados"> PRODUCTOS DESTACADOS </h2>
 
-    <footer>
-        <section class="carrusel-container">
-            <h2 class="destacados"> PRODUCTOS DESTACADOS </h2>
+        <div id="carouselExampleIndicators" class="carousel slide d-flex w-50 carrusel" data-bs-ride="carousel">
 
-            <div id="carouselExampleIndicators" class="carousel slide d-block w-50 carrusel " data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active carrusel-1">
+                    <a href="./Paginas/Porsche718.html" class="enlace">
+                        <img src="./Src/Imagenes/Porsche.Cayman718.jpg" class="d-block w-100" alt="Porsche718Cayman">
 
-                <div class="carousel-inner">
-                    <div class="carousel-item active carrusel-1">
+                        <div>
+                            <ul class="descripcion">
+                                <li><strong> PORSCHE 718 CAYMAN S </strong></li>
+                                <li> Color: Amarillo </li>
+                                <li> Tipo de combustible: Nafta </li>
+                                <li> Puertas: 2 </li>
+                                <li> Kilómetros: 27.562 Km </li>
+                                <li><strong> $ 160.000 USD </strong></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
 
-                            <img src="./Src/Imagenes/Porsche.Cayman718.jpg" class="d-block w-100" alt="Porsche718Cayman">
+                <div class="carousel-item carrusel-2">
+                    <a href=" ./Paginas/Porsche911.html" class="enlace">
+                        <img src="./Src/Imagenes/Porsche.911.1971.jpg" class="d-block w-100" alt="Porsche911">
 
-                            <div>
+                        <div>
+                            <ul class="descripcion">
+                                <li><strong> PORSCHE 911 CARRERA S </strong></li>
+                                <li> Color: Naranja </li>
+                                <li> Tipo de combustible: Nafta </li>
+                                <li> Puertas: 2 </li>
+                                <li> Kilómetros: 32.567 Km </li>
+                                <li><strong> $ 137.000 USD </strong></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="carousel-item carrusel-3">
+                    <a href="./Paginas/FordF150.html" class="enlace">
+                        <img src="./Src/Imagenes/Ford.F150.Raptor.jpg" class="d-block w-100" alt="Ford.F150">
+
+                        <div>
+                            <ul class="descripcion">
+                                <li><strong> FORD F-150 RAPTOR </strong></li>
+                                <li> Color: Azul </li>
+                                <li> Tipo de combustible: Nafta </li>
+                                <li> Puertas: 4 </li>
+                                <li> Kilómetros: 12.562 Km </li>
+                                <li><strong> $ 95.000 USD </strong></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev bg-transparent border-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next bg-transparent border-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Menu desplegable -->
+
+    <div class="accordion accordion-flush menu-desplegable" id="accordionFlushExample">
+
+        <div class="accordion-item">
+
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed btn btn-outline-primary ver-todo" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Ver todo
+            </button>
+          </h2>
+
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+
+                <div class="publicaciones">
+                    <div class="card bg-transparent" style="width: 14rem;">
+                        <a href="./Paginas/Porsche718.html" class="enlace">
+
+                            <img src="./Src/Imagenes/Porsche.Cayman718.jpg" class="card-img-top" alt="Porsche-Cayman718">
+
+                            <div class="card-body">
                                 <ul class="descripcion">
                                     <li><strong> PORSCHE 718 CAYMAN S </strong></li>
                                     <li> Color: Amarillo </li>
@@ -96,29 +167,34 @@
                                     <li><strong> $ 160.000 USD </strong></li>
                                 </ul>
                             </div>
+                        </a>
                     </div>
 
-                    <div class="carousel-item carrusel-2">
+                    <div class="card bg-transparent" style="width: 14rem;">
+                        <a href="./Paginas/Porsche911.html" class="enlace">
 
-                            <img src="./Src/Imagenes/Porsche.911.1971.jpg" class="d-block w-100" alt="Porsche911">
+                            <img src="./Src/Imagenes/Porsche.911.1971.jpg" class="card-img-top" alt="Ford-F150">
 
-                            <div>
+                            <div class="card-body">
                                 <ul class="descripcion">
-                                    <li><strong> PORSCHE 911 CARRERA S </strong></li>
+                                    <li><strong> PORSCHE 911 CARRERA S </strong>
+                                    </li>
                                     <li> Color: Naranja </li>
                                     <li> Tipo de combustible: Nafta </li>
                                     <li> Puertas: 2 </li>
                                     <li> Kilómetros: 32.567 Km </li>
-                                    <li><strong> $ 137.000 USD </strong></li>
+                                    <li> <strong> $ 137.000 USD </strong></li>
                                 </ul>
                             </div>
+                        </a>
                     </div>
 
-                    <div class="carousel-item carrusel-3">
+                    <div class="card bg-transparent" style="width: 14rem;">
+                        <a href="./Paginas/FordF150.html" class="enlace">
 
-                            <img src="./Src/Imagenes/Ford.F150.Raptor.jpg" class="d-block w-100" alt="Ford.F150">
+                            <img src="./Src/Imagenes/Ford.F150.Raptor.jpg" class="card-img-top" alt="Ford-F150">
 
-                            <div>
+                            <div class="card-body">
                                 <ul class="descripcion">
                                     <li><strong> FORD F-150 RAPTOR </strong></li>
                                     <li> Color: Azul </li>
@@ -128,27 +204,88 @@
                                     <li><strong> $ 95.000 USD </strong></li>
                                 </ul>
                             </div>
+                        </a>
+                    </div>
+
+                    <div class="card bg-transparent" style="width: 14rem;">
+                        <a href="./Paginas/VW-Beetle.html" class="enlace">
+
+                            <img src="./Src/Imagenes/VW-Beetle.jpg" class="card-img-top" alt="VW-Beetle">
+
+                            <div class="card-body">
+                                <ul class="descripcion">
+                                    <li><strong> VOLKSWAGEN BEETLE 1957 </strong></li>
+                                    <li> Color: Negro </li>
+                                    <li> Tipo de combustible: Nafta </li>
+                                    <li> Puertas: 2 </li>
+                                    <li> Kilómetros: 56.200 Km </li>
+                                    <li><strong> $ 8.000 USD USD </strong></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card bg-transparent" style="width: 14rem;">
+                        <a href="./Paginas/ToyotaGT86.html" class="enlace">
+
+                            <img src="./Src/Imagenes/Toyota-GT86.jpg" class="card-img-top" alt="Toyota-GT86">
+
+                            <div class="card-body">
+                                <ul class="descripcion">
+                                    <li><strong> TOYOTA GT 86 2015 </strong></li>
+                                    <li> Color: Amarillo </li>
+                                    <li> Tipo de combustible: Nafta </li>
+                                    <li> Puertas: 2 </li>
+                                    <li> Kilómetros: 32.200 Km </li>
+                                    <li><strong> $ 20.000 USD USD </strong></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card bg-transparent" style="width: 14rem;">
+                        <a href="./Paginas/FordMustang.html" class="enlace">
+
+                            <img src="./Src/Imagenes/Ford.Mustang.jpg" class="card-img-top" alt="Ford-Mustang">
+
+                            <div class="card-body">
+                                <ul class="descripcion">
+                                    <li><strong> FORD MUSTANG 2015 </strong></li>
+                                    <li> Color: Rojo </li>
+                                    <li> Tipo de combustible: Nafta </li>
+                                    <li> Puertas: 2 </li>
+                                    <li> Kilómetros: 46.524 Km </li>
+                                    <li><strong> $ 90.000 USD USD </strong></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card bg-transparent" style="width: 14rem;">
+                        <a href="./Paginas/PeugeotRCZ.html" class="enlace">
+
+                            <img src="./Src/Imagenes/Peugeot-RCZ.jpg" class="card-img-top" alt="Peugeot-RCZ">
+
+                            <div class="card-body">
+                                <ul class="descripcion">
+                                    <li><strong> PEUGEOT RCZ 2013 </strong></li>
+                                    <li> Color: Negro </li>
+                                    <li> Tipo de combustible: Nafta </li>
+                                    <li> Puertas: 2 </li>
+                                    <li> Kilómetros: 66.524 Km </li>
+                                    <li><strong> $ 30.000 USD USD </strong></li>
+                                </ul>
+                            </div>
+                        </a>
                     </div>
                 </div>
-
-                <button class="carousel-control-prev bg-transparent border-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next bg-transparent border-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
             </div>
-        </section>
+          </div>
+        </div>
+    </div>
 
-        <section class="seccion-boton animate__animated animate__bounce animate__delay-5s">
-            <div class="boton">
-                <!-- Boton -->
-                <a href="./Paginas/Pulicaciones.html">
-                    <button type="button" class="btn btn-outline-primary ver-todo">Ver Todo</button>
-                </a>
-            </div>
-        </section>
 
+    <footer>
         <h3 class="contactanos"> Contactanos </h3>
 
         <nav>
@@ -181,7 +318,7 @@
         </nav>
     </footer>
 
-    <!-- BOOTSRAP -->
+    <!-- SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>
